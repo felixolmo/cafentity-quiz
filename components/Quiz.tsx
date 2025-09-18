@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { z } from "zod";
 import Image from "next/image";
-import logo from "@/public/cafentity-logo.png";
 
 type Q = {
   id: string;
@@ -165,7 +164,7 @@ export default function Quiz() {
           <div className="flex items-center justify-between">
             <div className="text-sm font-medium" style={{ color: BRAND }}>Question {step + 1} of {QUESTIONS.length}</div>
             <div className="h-14 w-14 ring-2 bg-white rounded-full overflow-hidden relative" style={{ borderColor: BRAND }}>
-              <Image src={logo} alt="Cafentity Logo" fill className="object-contain p-2" priority />
+              <Image src="/cafentity-logo.png" alt="Cafentity Logo" fill className="object-contain p-2" priority />
             </div>
           </div>
           <div className="mt-4 flex items-center gap-3">
