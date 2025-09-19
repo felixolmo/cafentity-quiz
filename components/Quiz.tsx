@@ -23,7 +23,13 @@ const QUESTIONS: Q[] = [
     "Brand launch & marketing (tech-enabled)",
     "Planting / origin partnership"
   ]},
-  { id: "volume", label: "Approximate monthly volume", type: "choice", options: ["Under 500 kg", "500 kg–2 t", "2–10 t", "10–50 t", "50 t+"] },
+  { id: "volume", label: "Approximate monthly volume (metric tons / pounds)", type: "choice", options: [
+    "Under 500 kg (≈ 1,100 lb)",
+    "500 kg–2 t (≈ 1,100–4,400 lb)",
+    "2–10 t (metric tons, ≈ 4,400–22,000 lb)",
+    "10–50 t (metric tons, ≈ 22,000–110,000 lb)",
+    "50 t+ (metric tons, ≈ 110,000+ lb)"
+  ]},
   { id: "originPref", label: "Preferred origins", type: "choice", options: [
     "Colombia","Brazil","Central America","Puerto Rico","Dominican Republic","Open to recommendations","Other (write-in)"
   ]},
